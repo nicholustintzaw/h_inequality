@@ -34,7 +34,8 @@ summary_stats <- df %>%
     Median = median(Income),
     SD = sd(Income),
     Min = min(Income),
-    Max = max(Income)
+    Max = max(Income), 
+    Percentile_80 = quantile(Income, 0.8)
   )
 
 # Print the summary statistics table
